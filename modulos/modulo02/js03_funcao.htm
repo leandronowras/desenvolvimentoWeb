@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js03_funcao.htm - somatoria com entrada de dados</title>
+</head>
+<body>
+    <h3>Soma entre 2 numeros</h3>
+
+    <form name="MeuFormulario" action="" method="POST">
+        Digite o primeiro numero <input type="text" name="f_n1"><p></p>
+        Digite o segundo numero <input type="text" name="f_n2"><p></p>
+        <input type="button" name="btn=somar" value="Somar" onClick="soma()" />
+        <input type="reset" name="btn=apagar" value="Apagar" />
+
+    </form>
+
+    <script>
+        var js_n1
+        var js_n2
+        var soma
+
+        function soma() {
+            js_n1 = parseInt(document.MeuFormulario.f_n1.value)
+            js_n2 = parseInt(document.MeuFormulario.f_n2.value)
+
+            soma = (js_n1) + (js_n2)
+
+            window.alert('Resultado final: ' + soma.toString())
+            }
+
+    </script>
+</body>
+</html>
