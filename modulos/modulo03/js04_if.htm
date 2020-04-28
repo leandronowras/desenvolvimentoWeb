@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var js_n1
+        var js_n2
+        var js_n3
+
+        js_n1 = parseInt(window.prompt('Digite o primeiro numero'))
+        js_n2 = parseInt(window.prompt('Digite o segundo numero'))
+
+        if (js_n1 > js_n2) {
+            js_n3 = js_n1
+            js_n1 = js_n2
+            js_n2 = js_n3
+        }
+
+        document.write('A ordem crescente dos numeros eh: ' + js_n1 + ', ' + js_n2)
+
+
+        // outra forma de fazer utilizando array
+
+        // var js_n3 = [js_n1, js_n2].sort()
+        // document.write('A ordem crescente dos numeros eh: ' + js_n3)
+
+    </script>
+</body>
+</html>

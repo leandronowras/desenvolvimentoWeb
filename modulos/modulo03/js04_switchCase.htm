@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js04_switchCase</title>
+</head>
+<body>
+    
+    <form name="formcalend" action="" method="post">
+        Digite o m&ecirc;s <input type="text" name="f_mes" size="4" maxlengh='2'/><p></p>
+        <input type="button" name="btn_processar" value="Processar" onClick="verificames()"/>
+        <input type="reset" name="btn_cancelar" value="Cancelar"/> <p></p>
+        O m&ecirc;s corresponde &eacute;: <input type="text" name="f_nomemes" size="18" maxlength='15' />
+    </form>
+
+
+    <script>
+        var js_mes
+
+        function verificames(){
+            js_mes=parseInt(document.formcalend.f_mes.value)
+
+            switch(js_mes) {
+                case 1 : document.formcalend.f_mes.value = 'janeiro'; break
+                case 2 : document.formcalend.f_mes.value = 'fevereiro'; break
+                case 3 : document.formcalend.f_mes.value = 'marco'; break
+                case 4 : document.formcalend.f_mes.value = 'abril'; break
+                case 5 : document.formcalend.f_mes.value = 'maio'; break
+                case 6 : document.formcalend.f_mes.value = 'junho'; break
+                case 7 : document.formcalend.f_mes.value = 'julho'; break
+                case 8 : document.formcalend.f_mes.value = 'agosto'; break
+                case 9 : document.formcalend.f_mes.value = 'setembro'; break
+                case 10 : document.formcalend.f_mes.value = 'outubro'; break
+                case 11 : document.formcalend.f_mes.value = 'novembro'; break
+                case 12 : document.formcalend.f_mes.value = 'dezembro'; break
+                default: document.formcalend.f_mes.value = '** M\u00eas Inv\u00e1lido! **'; break
+            }
+        }
+    </script>
+
+</body>
+</html>
