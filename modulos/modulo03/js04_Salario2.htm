@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js04_Salario2</title>
+</head>
+<body>
+    <script>
+        var js_qht
+        var js_vht
+        var js_inss
+        var js_tdes
+        var js_sb
+        var js_sl
+        var js_resposta = true
+
+        do {
+            js_qht = parseFloat(window.prompt('Informe a quantidade de horas trabalhadas/mes'))
+            js_vht = parseFloat(window.prompt('Informe o valor da hora trabalhada'))
+            js_inss = parseFloat(window.prompt('Informe o percentual de desconto INSS'))
+
+            js_sb = js_vht * js_qht
+            js_tdes = (js_inss/100) * js_sb
+            js_sl = js_sb - js_tdes
+
+            document.write('<p>DEMONSTRATIVO para calculos do salario liquido')
+
+            document.write('<p>DEMONSTRATIVO para calculos do salario liquido')
+            if(js_qht > 180){
+                document.write('...(Valor maximo excedido)')
+            }
+
+            if(js_qht < 135){
+                document.write('...(Valor minimo invalido)')
+            }
+
+
+            document.write('<p>Valor da hora trabalhada (25 a 50)')
+
+            if(js_qht > 50){
+                document.write('...(Valor maximo excedido)')
+            }
+
+            if(js_qht < 25){
+                document.write('...(Valor minimo invalido)')
+            }
+
+
+            document.write('<p>Percentual de desconto INSS (5 a 15)')
+                if(js_qht > 15){
+                document.write('...(Valor maximo excedido)')
+            }
+
+            if(js_qht < 5){
+                document.write('...(Valor minimo invalido)')
+            }
+
+            document.write('<p>Salario bruto' + js_sb)
+            document.write('<p>Total de desconto INSS' + js_tdes)
+            document.write('<p>Salario liquido' + js_sl)
+
+
+        if (js_sl > 10500) {
+            document.write('Salario elevado! </b>maior que 10,5k');
+            } else {
+                if (js_sl > 6000) {
+                    document.write('Salario satisfatorio! </b> maior que 6k');
+                } else {
+                    if(js_sl > 3000) {
+                        document.write('Salario moderado </br> maior que 3k');
+                    } else {
+                        document.write('Salario insatisfatorio </b> menor que 3k');
+                    }
+            }
+        }
+
+        document.write('<p>====================')
+        js_resposta = window.confirm('Deseja continuar?')
+        } while (js_resposta == true)
+    </script>
+</body>
+</html>

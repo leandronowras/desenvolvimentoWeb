@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js04_OpTern</title>
+</head>
+<body>
+    <script>
+        document.write('<p>---------------------------<p>');
+        document.write('<p>Definicao e atribuicao de variaveis');
+        document.write('<p>var js_num = <b>30</b>; (js_num recebe valor 30)');
+        var js_num = 30
+
+        document.write('<p>---------------------------<p>');
+        document.write('<p>Operador ternario (? :) com Operadores Relacionais (==, !=, <): <p>');
+            ((js_num == 20) ? document.write('Sim'): document.write('nao'));
+
+        document.write('<p>js_num != 20 > "sim" : "nao" - resposta => <p>');
+            ((js_num != 20) ? document.write('Sim'): document.write('nao'));
+            
+        document.write('<p>js_num < 20 > "sim" : "nao" - resposta => <p>');
+            ((js_num < 20) ? document.write('Sim'): document.write('nao'));
+
+        
+        document.write('<p>---------------------------<p>');
+        document.write('<p>Operador ternario com expressao aritmetica<p>');
+
+        document.write('<p>(js_num - 20)==0) ? "Sim" : "Nao" - Resposta =><p>');
+            (((js_num - 20)==0) ? document.write('Sim'): document.write('nao'));
+    </script>
+</body>
+</html>
